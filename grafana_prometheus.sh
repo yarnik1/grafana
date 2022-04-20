@@ -141,7 +141,7 @@ add_node_to_config() {
     sed -i.bak '$a\
     - targets: ['"$nodeIP"':9100]\
       labels:\
-    label: "'"$nodeName"'"' "$HOME/prometheus/prometheus.yml"
+        label: "'"$nodeName"'"' "$HOME/prometheus/prometheus.yml"
     
     echo -e "prometheus.yml is updated!\n"
     
