@@ -227,7 +227,6 @@ main() {
         "Remove node from Prometheus config"
         "Remove Prometheus"
         "Remove Grafana"
-        "Remove both Prometheus and Grafana"
         "Quit"
     )
     
