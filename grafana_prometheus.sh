@@ -218,11 +218,6 @@ remove_grafana() {
     echo -e "Grafana has been sucessfully deleted!\n"
 }
 
-remove_grafana_prometheus() {
-    uninstall_grafana
-    uninstall_prometheus
-}
-
 main() {
     PS3="Choose an option: "
     options=(
@@ -261,10 +256,6 @@ main() {
             ;;
             "Remove Grafana")
                 remove_grafana
-                break
-            ;;
-            "Remove both Prometheus and Grafana")
-                remove_grafana_prometheus
                 break
             ;;
             "Quit")
